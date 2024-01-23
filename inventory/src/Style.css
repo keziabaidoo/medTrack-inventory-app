@@ -1,0 +1,14 @@
+* {
+  margin: 0;
+}
+
+.nav {
+  background-color: aqua;
+  height: 50px;
+}
+
+.sidenav {
+  background-color: bisque;
+  width: 20%;
+  height: 800px;
+}
