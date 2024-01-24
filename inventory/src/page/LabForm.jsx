@@ -61,4 +61,4 @@ function LabForm() {
   )
 }
 
-export default LabForm
+export default LabForm;
