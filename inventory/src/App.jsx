@@ -1,13 +1,11 @@
 import React from "react";
-import Nav from "./components/Nav";
-import SideNav from "./components/SideNav";
 import "./Style.css";
+import Dashboard from "./components/Dashboard";
 
 function App() {
   return (
     <>
-      <Nav />
-      <SideNav />
+      <Dashboard />
     </>
   );
 }
