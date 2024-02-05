@@ -1,5 +1,6 @@
 // Sidebar.js
 import React from "react";
+import { NavLink } from "react-router-dom";
 import {
   CiHome,
   CiUser,
@@ -8,37 +9,50 @@ import {
   CiLollipop,
   CiSettings,
 } from "react-icons/ci";
+import logo from "../images/logo.jpg";
 // import "./Sidebar.css";
 
 const Sidebar = () => {
   return (
     <div className="sidenav">
-      <h2>Sidebar</h2>
+      <img className="logo" src={logo} alt="logo" />
+
       <ul>
         <li>
-          <CiHome />
-          Home
+          <NavLink to="/">
+            <CiHome />
+            Home
+          </NavLink>
         </li>
         <li>
-          <CiLineHeight />
-          Reports
+          <NavLink to="/reports">
+            <CiLineHeight />
+            Reports
+          </NavLink>
         </li>
         <li>
-          <CiLollipop />
-          Inventory
+          <NavLink to="/inventory">
+            <CiLollipop />
+            Inventory
+          </NavLink>
         </li>
         <li>
-          <CiBitcoin />
-          Departments
-        </li>
-
-        <li>
-          <CiUser />
-          Users
+          <NavLink to="/departments">
+            <CiBitcoin />
+            Departments
+          </NavLink>
         </li>
         <li>
-          <CiSettings />
-          Settings
+          <NavLink to="/users">
+            <CiUser />
+            Users
+          </NavLink>
+        </li>
+        <li>
+          <NavLink to="/settings">
+            <CiSettings />
+            Settings
+          </NavLink>
         </li>
 
         {/* Add more menu items as needed */}
