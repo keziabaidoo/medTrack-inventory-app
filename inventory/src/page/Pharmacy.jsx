@@ -9,7 +9,7 @@ import { addDrugRequest, fetchDrugRequest } from "../store/thunk";
 
 // import { drugReducer } from "../redux-store/redux-reducers/drugReducer.js";
 
-function Home() {
+function Pharmacy() {
   const [DrugName, setDrugName] = useState("");
   const [Description, setDescription] = useState("");
   const [UnitPrice, setUnitPrice] = useState("");
@@ -125,4 +125,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default Pharmacy;
